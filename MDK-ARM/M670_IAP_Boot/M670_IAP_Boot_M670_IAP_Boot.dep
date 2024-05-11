@@ -1,7 +1,7 @@
 Dependencies for Project 'M670_IAP_Boot', Target 'M670_IAP_Boot': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
 F (startup_stm32f103xe.s)(0x658E59D7)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_M670_IAP_Boot-ID:\Keil5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil5\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1" --pd "GD32F10X_HD SETA 1" --pd "USE_STDPERIPH_DRIVER SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xe.lst --xref -o m670_iap_boot\startup_stm32f103xe.o --depend m670_iap_boot\startup_stm32f103xe.d)
-F (../Core/Src/main.c)(0x659CE325)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../RTT -I ../APP-I.\RTE\_M670_IAP_Boot-ID:\Keil5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil5\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o m670_iap_boot\main.o --omf_browse m670_iap_boot\main.crf --depend m670_iap_boot\main.d)
+F (../Core/Src/main.c)(0x6638A655)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../RTT -I ../APP-I.\RTE\_M670_IAP_Boot-ID:\Keil5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil5\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o m670_iap_boot\main.o --omf_browse m670_iap_boot\main.crf --depend m670_iap_boot\main.d)
 I (../Core/Inc/main.h)(0x65937AFA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x658BBC6D)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x658E59D2)
@@ -34,7 +34,7 @@ I (D:\Keil5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (../RTT/SEGGER_RTT.h)(0x6311B8C8)
 I (../RTT/SEGGER_RTT_Conf.h)(0x655F01E3)
 I (D:\Keil5\ARM\ARMCC\include\stdarg.h)(0x5E53505C)
-I (../APP/boot_app.h)(0x6593D1F7)
+I (../APP/boot_app.h)(0x663C28DC)
 I (../APP/w25x16.h)(0x6594B7BA)
 I (../APP/internal_flash.h)(0x659B99AE)
 F (../Core/Src/stm32f1xx_it.c)(0x658D0355)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../RTT -I ../APP-I.\RTE\_M670_IAP_Boot-ID:\Keil5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil5\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o m670_iap_boot\stm32f1xx_it.o --omf_browse m670_iap_boot\stm32f1xx_it.crf --depend m670_iap_boot\stm32f1xx_it.d)
@@ -70,7 +70,7 @@ I (D:\Keil5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (../RTT/SEGGER_RTT.h)(0x6311B8C8)
 I (../RTT/SEGGER_RTT_Conf.h)(0x655F01E3)
 I (D:\Keil5\ARM\ARMCC\include\stdarg.h)(0x5E53505C)
-I (../APP/boot_app.h)(0x6593D1F7)
+I (../APP/boot_app.h)(0x663C28DC)
 I (../APP/w25x16.h)(0x6594B7BA)
 I (../APP/internal_flash.h)(0x659B99AE)
 I (../Core/Inc/stm32f1xx_it.h)(0x658D0355)
@@ -107,7 +107,7 @@ I (D:\Keil5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (../RTT/SEGGER_RTT.h)(0x6311B8C8)
 I (../RTT/SEGGER_RTT_Conf.h)(0x655F01E3)
 I (D:\Keil5\ARM\ARMCC\include\stdarg.h)(0x5E53505C)
-I (../APP/boot_app.h)(0x6593D1F7)
+I (../APP/boot_app.h)(0x663C28DC)
 I (../APP/w25x16.h)(0x6594B7BA)
 I (../APP/internal_flash.h)(0x659B99AE)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x658BBC6D)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../RTT -I ../APP-I.\RTE\_M670_IAP_Boot-ID:\Keil5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil5\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o m670_iap_boot\stm32f1xx_hal_gpio_ex.o --omf_browse m670_iap_boot\stm32f1xx_hal_gpio_ex.crf --depend m670_iap_boot\stm32f1xx_hal_gpio_ex.d)
@@ -559,8 +559,8 @@ I (..\RTT\SEGGER_RTT.h)(0x6311B8C8)
 I (..\RTT\SEGGER_RTT_Conf.h)(0x655F01E3)
 I (D:\Keil5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\Keil5\ARM\ARMCC\include\stdarg.h)(0x5E53505C)
-F (..\APP\boot_app.c)(0x65AE15CD)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../RTT -I ../APP-I.\RTE\_M670_IAP_Boot-ID:\Keil5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil5\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o m670_iap_boot\boot_app.o --omf_browse m670_iap_boot\boot_app.crf --depend m670_iap_boot\boot_app.d)
-I (..\APP\boot_app.h)(0x6593D1F7)
+F (..\APP\boot_app.c)(0x663C36C4)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../RTT -I ../APP-I.\RTE\_M670_IAP_Boot-ID:\Keil5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil5\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o m670_iap_boot\boot_app.o --omf_browse m670_iap_boot\boot_app.crf --depend m670_iap_boot\boot_app.d)
+I (..\APP\boot_app.h)(0x663C28DC)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
 I (../RTT/aegis_debug.h)(0x658BC1BF)
 I (D:\Keil5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
@@ -624,7 +624,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x658BBC6D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x658BBC6D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x658BBC6D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x658BBC6D)
-I (..\APP\boot_app.h)(0x6593D1F7)
+I (..\APP\boot_app.h)(0x663C28DC)
 I (../RTT/aegis_debug.h)(0x658BC1BF)
 I (D:\Keil5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (../RTT/SEGGER_RTT.h)(0x6311B8C8)

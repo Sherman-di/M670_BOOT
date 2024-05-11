@@ -12,6 +12,7 @@
 
 #define PROGRAM_DATA_LENGTH             (4096)//4k
 #define APP_PROGRAM_START_ADDRESS       (0x8005000)
+#define RESET_HANDLER                   (APP_PROGRAM_START_ADDRESS + 4)
 
 typedef void (*p_fun)(void);
 

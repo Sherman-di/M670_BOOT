@@ -62,7 +62,13 @@ static uint16_t Cal_CRC16(uint8_t p_data[], uint8_t offset, uint32_t size)
 
     return ((uint16_t)(~u16CrcResult));
 }
-
+#if 1
+static __asm void modify_stack_pointer_and_start_app(uint32_t r0_sp, uint32_t r1_pc)
+{
+    MOV SP, R0
+    BX R1
+}
+#else
 static void jump(void){
 	
 	uint32_t jump_address = 0;
@@ -80,7 +86,7 @@ static void jump(void){
 	AEGIS_PRINT("  Err to runing user application!\r\n\n");
 
 }
-
+#endif
 void boot_app_task(void){
 	
 	uint8_t temp = 0, num = 0;
@@ -167,7 +173,8 @@ void boot_app_task(void){
 	HAL_RCC_DeInit();
 	HAL_DeInit();
 	HAL_Delay(100);
-	jump();		
+	//jump();		
+	modify_stack_pointer_and_start_app(APP_PROGRAM_START_ADDRESS, RESET_HANDLER);
 }
 
 static void MX_GPIO_DeInit(void)

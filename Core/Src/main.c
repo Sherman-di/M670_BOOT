@@ -68,6 +68,37 @@ static uint8_t read_data[8] = {0};
 static uint32_t test_data[4] = {0x20000c10, 0x44556677, 0x8899aabb, 0xccddeeff};
 static uint32_t read_data[4] = {0};
 #endif
+
+static void check_reset_source(void)//获取复位源
+{
+    if(__HAL_RCC_GET_FLAG(RCC_FLAG_PINRST) != RESET){// NRST 引脚复位
+			
+        AEGIS_PRINT("PIN reset \r\n");
+		}
+    else if(__HAL_RCC_GET_FLAG(RCC_FLAG_PORRST) != RESET){// 上电掉电复位
+			
+        AEGIS_PRINT("POR/PDR reset \r\n");
+		}
+    else if(__HAL_RCC_GET_FLAG(RCC_FLAG_SFTRST) != RESET){//  软件复位
+			
+        AEGIS_PRINT("Software reset  \r\n");
+		}
+    else if(__HAL_RCC_GET_FLAG(RCC_FLAG_IWDGRST) != RESET){// 独立看门狗复位
+			
+        AEGIS_PRINT("Independent watchdog reset \r\n");
+		}
+    else if(__HAL_RCC_GET_FLAG(RCC_FLAG_WWDGRST) != RESET){// 窗口看门狗复位
+			
+        AEGIS_PRINT("Window watchdog reset \r\n");
+		}
+    else if(__HAL_RCC_GET_FLAG(RCC_FLAG_LPWRRST) != RESET){//低电压复位
+			
+        AEGIS_PRINT("Low-power reset \r\n");	
+		}
+    __HAL_RCC_CLEAR_RESET_FLAGS();			//清除复位标志
+}
+
+
 /* USER CODE END 0 */
 
 /**
@@ -93,7 +124,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-  
+  check_reset_source(); 
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -104,7 +135,7 @@ int main(void)
 	
 	W25X16_CS_HIGH
 	W25X16_WP_Low
-	
+
 	AEGIS_PRINT("  IAP BOOT init complete...\n");  
 
 #ifdef TEST_W25X16
